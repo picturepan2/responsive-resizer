@@ -28,6 +28,10 @@
 
     margin: 0;
 }
+.copyright h1 a
+{
+    color: #fff;
+}
 .browser
 {
     display: -webkit-flex;
