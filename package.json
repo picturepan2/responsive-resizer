@@ -1,0 +1,27 @@
+{
+  "name": "responsive-resizer",
+  "version": "0.0.1",
+  "homepage": "http://picturepan2.github.io/responsive-resizer",
+  "author": "Yan Zhu <picturepan2@hotmail.com>",
+  "description": "Responsive Resizer - A web responsive layout test tool",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/picturepan2/responsive-resizer.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/picturepan2/responsive-resizer/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "less-plugin-autoprefix": "^1.5.1"
+  },
+  "dependencies": {
+    "spectre.css": "^0.2.9"
+  }
+}
