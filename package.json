@@ -22,6 +22,6 @@
     "less-plugin-autoprefix": "^1.5.1"
   },
   "dependencies": {
-    "spectre.css": "^0.2.9"
+    "spectre.css": "^0.5.5"
   }
 }
