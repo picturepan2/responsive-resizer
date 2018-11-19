@@ -19,7 +19,7 @@
     "gulp-csscomb": "^3.0.8",
     "gulp-less": "^4.0.1",
     "gulp-rename": "^1.2.2",
-    "less-plugin-autoprefix": "^1.5.1"
+    "less-plugin-autoprefix": "^2.0.0"
   },
   "dependencies": {
     "spectre.css": "^0.5.5"
