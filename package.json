@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.3",
+    "gulp-clean-css": "^4.0.0",
     "gulp-csscomb": "^3.0.8",
     "gulp-less": "^4.0.1",
     "gulp-rename": "^1.2.2",
