@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="assets/css/spectre-custom.min.css" />
   <link rel="stylesheet" href="assets/font/style.css" />
   <link rel="stylesheet" href="assets/css/app.min.css" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="icon" href="assets/img/favicon.png">
   <script src="assets/js/zepto.min.js"></script>
   <script>
     Zepto(function($){
@@ -46,7 +48,7 @@
 
       function load( url ) {
         if (url.search(/^http[s]?\:\/\//) == -1) {
-          url = 'http://' + url;
+          url = 'https://' + url;
         }
         target.attr('src', url );
         addressRaw = url;
@@ -61,6 +63,29 @@
           $('#browser').removeClass('mobile').addClass('desktop');
         }
       }
+
+      var count = 0;
+
+      function setWidth(keyCode) {
+        const displaySizes = [1440, 1280, 1024, 960, 840, 720, 600, 480, 400, 360];
+        
+        if (keyCode == 37) {
+          count = (count < 9)? count + 1: 0;
+        }
+        else if (keyCode == 39) {
+          count = (count > 0)? count - 1: 9;
+        } else {
+          return false;
+        }
+
+        $('#browser').width( displaySizes[count] + 'px');
+
+        checksize( displaySizes[count] );
+      }
+
+      document.addEventListener("keydown", event => {
+        setWidth(event.keyCode)
+      });
     })
   </script>
 </head>
